@@ -1,0 +1,15 @@
+<h2>Subjects</h2>
+
+<%= link_to("Add New Subject", "#") %>
+
+<% @subjects.each do |subject| %>
+	<%= subject.position %>
+	<%= subject.name %>
+	<%= subject.visible ? 'Yes' : 'No' %>
+	<%= subject.pages.size %>
+
+	<%= link_to("Show", "#") %>
+	<%= link_to("Edit", "#") %>
+	<%= link_to("Delete", "#") %>
+
+<%end%>
